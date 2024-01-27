@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5smmo4rqb4o6"
-path="res://.godot/imported/blue-screen.png-33348b7421703e271fa22a0bbea1fed3.ctex"
+uid="uid://bg31xs7b26xac"
+path="res://.godot/imported/copystr.png-c0ed643791b06c131a966b2edfc2094f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/items/Upgrades/blue-screen.png"
-dest_files=["res://.godot/imported/blue-screen.png-33348b7421703e271fa22a0bbea1fed3.ctex"]
+source_file="res://assets/images/items/Weapons/copystr.png"
+dest_files=["res://.godot/imported/copystr.png-c0ed643791b06c131a966b2edfc2094f.ctex"]
 
 [params]
 

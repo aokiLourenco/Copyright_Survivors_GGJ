@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bs4jg1p66fvyt"
-path="res://.godot/imported/oven.png-584826c4179a06491620d7376a41c7d8.ctex"
+uid="uid://c5smmo4rqb4o6"
+path="res://.godot/imported/blue-screen.png-be6af989de2dbb6922e139c3a310a802.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/items/Upgrades/oven.png"
-dest_files=["res://.godot/imported/oven.png-584826c4179a06491620d7376a41c7d8.ctex"]
+source_file="res://assets/images/items/Experience/blue-screen.png"
+dest_files=["res://.godot/imported/blue-screen.png-be6af989de2dbb6922e139c3a310a802.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chj7tbmoa2m4k"
-path="res://.godot/imported/toktik.png-7f522f52ecdd063c98032c20934ed4f6.ctex"
+uid="uid://bj0unw5ca1hv3"
+path="res://.godot/imported/Protag.png-308fd79bf8faeeeb1e344e5073334c50.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/items/Upgrades/toktik.png"
-dest_files=["res://.godot/imported/toktik.png-7f522f52ecdd063c98032c20934ed4f6.ctex"]
+source_file="res://assets/images/player/Protag.png"
+dest_files=["res://.godot/imported/Protag.png-308fd79bf8faeeeb1e344e5073334c50.ctex"]
 
 [params]
 
