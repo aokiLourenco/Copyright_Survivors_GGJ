@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://maqy8qwj4ft"]
 
 [ext_resource type="Script" path="res://src/TitleScreen/menu.gd" id="1_c7jjw"]
-[ext_resource type="PackedScene" uid="uid://ch4sfe6bn0xeq" path="res://src/utility/button.tscn" id="2_smd1a"]
+[ext_resource type="PackedScene" path="res://src/utility/button.tscn" id="2_smd1a"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -51,5 +51,4 @@ text = "Exit"
 [connection signal="pressed" from="btn_play" to="btn_play" method="_on_pressed"]
 [connection signal="click_end" from="btn_exit" to="." method="_on_btn_exit_click_end"]
 [connection signal="mouse_entered" from="btn_exit" to="btn_exit" method="_on_mouse_entered"]
-[connection signal="pressed" from="btn_exit" to="." method="_on_btn_exit_pressed"]
 [connection signal="pressed" from="btn_exit" to="btn_exit" method="_on_pressed"]

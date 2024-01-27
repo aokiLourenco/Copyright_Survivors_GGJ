@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dph72c678u345"]
+[gd_scene load_steps=7 format=3 uid="uid://bw18jqj7k8uo4"]
 
 [ext_resource type="Texture2D" uid="uid://cf2i7alfs8fvf" path="res://assets/images/player/player.png" id="1_uxm3d"]
 
@@ -40,9 +40,9 @@ animations = [{
 scale = Vector2(4, 4)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(77.875, 71.875)
+position = Vector2(-0.75, 0)
 shape = SubResource("RectangleShape2D_u6ni8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
-position = Vector2(76.75, 72.75)
+position = Vector2(-0.75, 1)
 sprite_frames = SubResource("SpriteFrames_opbtg")

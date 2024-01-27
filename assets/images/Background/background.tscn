@@ -1,13 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://bg3afcu0gjtj1"]
+[gd_scene load_steps=2 format=3 uid="uid://btd8tc22p34g2"]
 
-[ext_resource type="Texture2D" uid="uid://dq36t6ddlnihq" path="res://Images/3rd_grass.svg" id="1_y8o5y"]
+[ext_resource type="Texture2D" uid="uid://dq36t6ddlnihq" path="res://assets/images/Background/3rd_grass.svg" id="1_y8o5y"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 
 [node name="Node2D" type="Node2D" parent="."]
+z_as_relative = false
 
 [node name="Sprite2D3" type="Sprite2D" parent="Node2D"]
-position = Vector2(925.5, 135.168)
+position = Vector2(925, 138)
 scale = Vector2(0.353906, 0.215362)
 texture = ExtResource("1_y8o5y")
 
