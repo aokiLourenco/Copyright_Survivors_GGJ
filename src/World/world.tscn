@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dl381mulaluyu"]
+
+[ext_resource type="Texture2D" uid="uid://7lep2pe2tdnf" path="res://assets/images/Background/better_grass.png" id="1_jdinb"]
+[ext_resource type="PackedScene" uid="uid://bw18jqj7k8uo4" path="res://assets/images/player/player.tscn" id="2_nnc88"]
+
+[node name="World" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 2
+texture_repeat = 2
+position = Vector2(690, 917)
+texture = ExtResource("1_jdinb")
+region_enabled = true
+region_rect = Rect2(-4000, -4000, 4000, 4000)
+
+[node name="Player" parent="." instance=ExtResource("2_nnc88")]

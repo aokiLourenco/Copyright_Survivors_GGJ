@@ -1,0 +1,95 @@
+[gd_scene load_steps=4 format=3 uid="uid://8wvsq1pe8ald"]
+
+[ext_resource type="Script" path="res://src/utility/item_option.gd" id="1_66l1h"]
+[ext_resource type="Texture2D" uid="uid://dl06unj0515gq" path="res://assets/images/items/Weapons/onion.png" id="2_f365g"]
+[ext_resource type="FontFile" uid="uid://d0ljtejlewh2s" path="res://assets/font/public_pixel/PublicPixel-z84yD.ttf" id="3_ety0o"]
+
+[node name="ItemOption" type="ColorRect"]
+custom_minimum_size = Vector2(180, 50)
+offset_right = 232.0
+offset_bottom = 65.0
+color = Color(0.670588, 0.360784, 0.972549, 0.392157)
+script = ExtResource("1_66l1h")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 21.0
+offset_right = 46.0
+offset_bottom = 58.0
+color = Color(0, 0, 0, 0.478431)
+
+[node name="ItemIcon" type="TextureRect" parent="ColorRect"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 3.0
+offset_right = 46.0
+offset_bottom = 43.0
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_f365g")
+expand_mode = 1
+
+[node name="lbl_name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 2.0
+offset_right = 72.0
+offset_bottom = 25.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("3_ety0o")
+theme_override_font_sizes/font_size = 15
+text = "Name"
+horizontal_alignment = 1
+
+[node name="lbl_description" type="Label" parent="."]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 22.0
+offset_right = 281.0
+offset_bottom = 70.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("3_ety0o")
+theme_override_font_sizes/font_size = 8
+text = "Description of Item"
+
+[node name="lbl_level" type="Label" parent="."]
+layout_mode = 0
+offset_left = 148.0
+offset_top = 2.0
+offset_right = 261.0
+offset_bottom = 25.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("3_ety0o")
+theme_override_font_sizes/font_size = 15
+text = "Level:1"
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 16.0
+offset_right = 226.0
+offset_bottom = 17.0
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 231.0
+offset_top = 1.0
+offset_right = 232.0
+offset_bottom = 64.0
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 232.0
+offset_bottom = 1.0
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = 64.0
+offset_right = 232.0
+offset_bottom = 65.0
+
+[node name="ColorRect6" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 1.0
+offset_bottom = 64.0
