@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkxi364dinkab"]
+
+[ext_resource type="Script" path="res://assets/images/player/Attack/swipe.gd" id="1_veotg"]
+[ext_resource type="Texture2D" uid="uid://dr4lj8oiylyt0" path="res://assets/images/items/Weapons/sword.svg" id="2_8imqi"]
+[ext_resource type="AudioStream" uid="uid://cim0gctsi0e5f" path="res://assets/Sounds/swipe.wav" id="3_no5ot"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tl6up"]
+size = Vector2(73, 172)
+
+[node name="Area2D" type="Area2D" groups=["attack"]]
+position = Vector2(-214, -209)
+script = ExtResource("1_veotg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(216, 207)
+scale = Vector2(0.204503, 0.198951)
+texture = ExtResource("2_8imqi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(210.5, 212)
+shape = SubResource("RectangleShape2D_tl6up")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_no5ot")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
