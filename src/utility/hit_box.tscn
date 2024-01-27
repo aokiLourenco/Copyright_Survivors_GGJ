@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://g53dow7ilana"]
+
+[sub_resource type="GDScript" id="GDScript_7rquh"]
+resource_name = "hit_box.tscn::GDScript_dnuma"
+script/source = "extends Area2D
+
+@export var damage = 1
+@onready var collision = $CollisionShape2D
+@onready var disableTimer = $DisableHitBoxTimer
+
+func tempdisable():
+	collision.call_deferred(\"set\",\"disabled\",true)
+	disableTimer.start()
+
+func _on_disable_hit_box_timer_timeout():
+	collision.call_deferred(\"set\",\"disabled\",false)
+"
+
+[node name="HitBox" type="Area2D" groups=["attack"]]
+script = SubResource("GDScript_7rquh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="DisableHitBoxTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="DisableHitBoxTimer" to="." method="_on_disable_hit_box_timer_timeout"]

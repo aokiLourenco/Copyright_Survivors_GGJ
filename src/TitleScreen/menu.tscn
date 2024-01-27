@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://maqy8qwj4ft"]
+
+[ext_resource type="Script" path="res://src/TitleScreen/menu.gd" id="1_c7jjw"]
+[ext_resource type="Script" path="res://src/utility/Button.gd" id="2_5msay"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -512.0
+offset_bottom = -288.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c7jjw")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 673.0
+offset_bottom = 382.0
+color = Color(0.572549, 0.168627, 0.168627, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 100.0
+theme_override_font_sizes/font_size = 50
+text = "Copyright Survivers"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="btn_play" type="Button" parent="."]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 250.0
+offset_right = 360.0
+offset_bottom = 281.0
+text = "Play"
+icon_alignment = 1
+script = ExtResource("2_5msay")
+
+[node name="btn_exit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 290.0
+offset_right = 360.0
+offset_bottom = 321.0
+text = "Exit"
+script = ExtResource("2_5msay")
+
+[connection signal="click_end" from="btn_play" to="." method="_on_btn_play_click_end"]
+[connection signal="mouse_entered" from="btn_play" to="btn_play" method="_on_mouse_entered"]
+[connection signal="pressed" from="btn_play" to="btn_play" method="_on_pressed"]
+[connection signal="click_end" from="btn_exit" to="." method="_on_btn_exit_click_end"]
+[connection signal="mouse_entered" from="btn_exit" to="btn_exit" method="_on_mouse_entered"]
+[connection signal="pressed" from="btn_exit" to="btn_exit" method="_on_pressed"]

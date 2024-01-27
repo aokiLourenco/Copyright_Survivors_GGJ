@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="A Original Game"
-run/main_scene="res://assets/images/player/player.tscn"
+run/main_scene="res://src/TitleScreen/menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -22,6 +22,12 @@ UpgradeDb="*res://src/utility/upgrade_db.gd"
 [dotnet]
 
 project/assembly_name="A Original Game"
+
+[importer_defaults]
+
+animation_library={
+"animation/fps": 60.0
+}
 
 [input]
 

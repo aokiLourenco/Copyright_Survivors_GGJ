@@ -44,4 +44,12 @@ const UPGRADES = {
 		"prerequisite": ["foxtail4"],
 		"type": "weapon"
 	},
+	"food": {
+		"icon": "res://Images/items/Experience/techsupposrt.png",
+		"displayname": "Food",
+		"details": "Heals you for 20 health",
+		"level": "N/A",
+		"prerequisite": [],
+		"type": "item"
 	}
+}
