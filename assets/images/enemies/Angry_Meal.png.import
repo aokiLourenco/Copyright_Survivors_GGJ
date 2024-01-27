@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bs6ac5jca3yc4"
-path="res://.godot/imported/homework.png-e15460103db35e4b9a516fa9c4bf4be3.ctex"
+uid="uid://red2xfo8jiaw"
+path="res://.godot/imported/Angry_Meal.png-ccd0453c39dc47767b81fd9a7b4f907b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/items/Chest/homework.png"
-dest_files=["res://.godot/imported/homework.png-e15460103db35e4b9a516fa9c4bf4be3.ctex"]
+source_file="res://assets/images/enemies/Angry_Meal.png"
+dest_files=["res://.godot/imported/Angry_Meal.png-ccd0453c39dc47767b81fd9a7b4f907b.ctex"]
 
 [params]
 

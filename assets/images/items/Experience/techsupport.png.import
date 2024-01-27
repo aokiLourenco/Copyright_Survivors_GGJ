@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bs6ac5jca3yc4"
-path="res://.godot/imported/homework.png-e15460103db35e4b9a516fa9c4bf4be3.ctex"
+uid="uid://c8a3olofhmu3y"
+path="res://.godot/imported/techsupport.png-65fc7483189c2b32941dce4c36e017b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/items/Chest/homework.png"
-dest_files=["res://.godot/imported/homework.png-e15460103db35e4b9a516fa9c4bf4be3.ctex"]
+source_file="res://assets/images/items/Experience/techsupport.png"
+dest_files=["res://.godot/imported/techsupport.png-65fc7483189c2b32941dce4c36e017b3.ctex"]
 
 [params]
 
