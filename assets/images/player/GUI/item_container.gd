@@ -4,4 +4,4 @@ extends TextureRect
 var upgrade = null
 func _ready():
 	if upgrade != null:
-		$ItemTexture.texture = load(UpgradeDb.UPGRADES[upgrade]["icon"])
+		$ItemTexture.texture = load(Items.UPGRADES[upgrade]["icon"])
