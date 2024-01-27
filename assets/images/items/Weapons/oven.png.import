@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bg31xs7b26xac"
-path="res://.godot/imported/demonetization.png-dce41e4248251a385e77c38476856707.ctex"
+uid="uid://bs4jg1p66fvyt"
+path="res://.godot/imported/oven.png-8bdb01fbea8b235a92f101dcb5917e78.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/items/Upgrades/demonetization.png"
-dest_files=["res://.godot/imported/demonetization.png-dce41e4248251a385e77c38476856707.ctex"]
+source_file="res://assets/images/items/Weapons/oven.png"
+dest_files=["res://.godot/imported/oven.png-8bdb01fbea8b235a92f101dcb5917e78.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chj7tbmoa2m4k"
-path="res://.godot/imported/toktik.png-7f522f52ecdd063c98032c20934ed4f6.ctex"
+uid="uid://bg31xs7b26xac"
+path="res://.godot/imported/copystr.png-c0ed643791b06c131a966b2edfc2094f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/items/Upgrades/toktik.png"
-dest_files=["res://.godot/imported/toktik.png-7f522f52ecdd063c98032c20934ed4f6.ctex"]
+source_file="res://assets/images/items/Weapons/copystr.png"
+dest_files=["res://.godot/imported/copystr.png-c0ed643791b06c131a966b2edfc2094f.ctex"]
 
 [params]
 

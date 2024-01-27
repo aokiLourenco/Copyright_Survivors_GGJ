@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5yvquhc1j6wa"
-path="res://.godot/imported/Protag.png-308fd79bf8faeeeb1e344e5073334c50.ctex"
+uid="uid://chj7tbmoa2m4k"
+path="res://.godot/imported/toktik.png-cfec00ec7b134bba787745c8ee374d87.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/player/Protag.png"
-dest_files=["res://.godot/imported/Protag.png-308fd79bf8faeeeb1e344e5073334c50.ctex"]
+source_file="res://assets/images/items/Weapons/toktik.png"
+dest_files=["res://.godot/imported/toktik.png-cfec00ec7b134bba787745c8ee374d87.ctex"]
 
 [params]
 
