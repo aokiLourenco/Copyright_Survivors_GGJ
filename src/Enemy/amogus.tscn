@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://dug4v7xi4m20p"]
+[gd_scene load_steps=11 format=3 uid="uid://dug4v7xi4m20p"]
 
 [ext_resource type="Texture2D" uid="uid://bfl3if5t7pqgu" path="res://assets/images/enemies/AMOGUS_left-to-right.png" id="1_o4n6f"]
+[ext_resource type="Script" path="res://src/Enemy/enemy.gd" id="1_phsxl"]
 [ext_resource type="PackedScene" path="res://src/utility/hit_box.tscn" id="2_5ssct"]
 [ext_resource type="PackedScene" uid="uid://cll5nn8uomugh" path="res://src/utility/hurt_box.tscn" id="3_tdhaw"]
 
@@ -39,6 +40,10 @@ height = 60.0
 [node name="AMOGUS" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+collision_layer = 5
+collision_mask = 5
+motion_mode = 1
+script = ExtResource("1_phsxl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 position = Vector2(1, -6)

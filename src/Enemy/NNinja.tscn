@@ -1,6 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://btahs4cnce6t3"]
+[gd_scene load_steps=13 format=3 uid="uid://btahs4cnce6t3"]
 
-[ext_resource type="Texture2D" uid="uid://cdyhqy1xmpwuk" path="res://assets/images/enemies/Minja.png" id="1_a4p0k"]
+[ext_resource type="Texture2D" uid="uid://cywtu42o3akh0" path="res://assets/images/enemies/Minja.png" id="1_a4p0k"]
+[ext_resource type="Script" path="res://src/Enemy/enemy.gd" id="1_wa67x"]
 [ext_resource type="PackedScene" uid="uid://cll5nn8uomugh" path="res://src/utility/hurt_box.tscn" id="2_qtdue"]
 [ext_resource type="PackedScene" path="res://src/utility/hit_box.tscn" id="3_3o481"]
 
@@ -52,6 +53,10 @@ radius = 22.0
 height = 48.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+collision_layer = 5
+collision_mask = 5
+motion_mode = 1
+script = ExtResource("1_wa67x")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_nb754")

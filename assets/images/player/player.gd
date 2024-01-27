@@ -11,11 +11,11 @@ var experience_level = 1
 var collected_experience = 0
 
 #Attacks
-var foxtail = preload("res://Player/Attack/swipe.tscn")
+var swipe = preload("res://assets/images/player/Attack/swipe.tscn")
 
 #AttackNodes
-@onready var FoxTailTimer = get_node("%FoxTailTimer")
-@onready var FoxTailAttaclTimer = get_node("%FoxTailAttackTimer")
+@onready var SwipeTimer = get_node("%SwipeTimer")
+@onready var SwipeAttackTimer = get_node("%SwipeAttackTimer")
 
 #UPGRADES
 var collected_upgrades = []
@@ -27,10 +27,10 @@ var spell_size = 0
 var additional_attacks = 0
 
 #Fox Tail
-var Fox_Tail_ammo = 0
-var Fox_Tail_baseammo = 0
-var Fox_Tail_attackspeed = 2.0
-var Fox_Tail_level = 0
+var swipe_ammo = 0
+var swipe_baseammo = 0
+var swipe_attackspeed = 2.0
+var swipe_level = 0
 
 #Enemy Related
 var enemy_close = []
@@ -43,13 +43,13 @@ var enemy_close = []
 @onready var lblLevel = get_node("%lbl_level")
 @onready var levelPanel = get_node("%LevelUp")
 @onready var upgradeOptions = get_node("%UpgradeOptions")
-@onready var itemOptions = preload("res://Images/Utility/item_option.tscn")
+@onready var itemOptions = preload("res://src/utility/item_option.tscn")
 @onready var sndLevelUp = get_node("%snd_levelup")
 @onready var healthBar = get_node("%HealthBar")
 @onready var lblTimer = get_node("%lblTimer")
 @onready var collectedWeapons = get_node("%CollectedWeapons")
 @onready var collectedUpgrades = get_node("%CollectedUpgrades")
-@onready var itemContainer = preload("res://Images/Player/GUI/item_container.tscn")
+@onready var itemContainer = preload("res://assets/images/Player/GUI/item_container.tscn")
 
 @onready var deathPanel = get_node("%DeathPanel")
 @onready var lblResult = get_node("%lbl_Result")
@@ -60,7 +60,7 @@ var enemy_close = []
 signal playerdeath
 
 func _ready():
-	upgrade_character("foxtail1")
+	upgrade_character("swipe1")
 	attack()
 	set_expbar(experience, calculate_experiencecap())
 	_on_hurt_box_hurt(0,0,0)
@@ -69,8 +69,9 @@ func _physics_process(delta):
 	movement()
 	
 func movement():
-	
-
+	var x_mov = Input.get_action_strength("right") - Input.get_action_strength("left")
+	var y_mov = Input.get_action_strength("down") - Input.get_action_strength("up")
+	var mov = Vector2(x_mov,y_mov)
 	if mov != Vector2.ZERO:
 		last_movement = mov
 		if walkTimer.is_stopped():
@@ -83,11 +84,11 @@ func movement():
 	velocity = mov.normalized()*movement_speed
 	move_and_slide()
 	
-	func attack():
-	if Fox_Tail_level > 0:
-		FoxTailTimer.wait_time = Fox_Tail_attackspeed * (1-spell_cooldown)
-		if FoxTailTimer.is_stopped():
-			FoxTailTimer.start()
+func attack():
+	if swipe_level > 0:
+		SwipeTimer.wait_time = swipe_attackspeed * (1-spell_cooldown)
+		if SwipeTimer.is_stopped():
+			SwipeTimer.start()
 	
 
 func _on_hurt_box_hurt(damage, _angle, _knockback):
@@ -97,22 +98,22 @@ func _on_hurt_box_hurt(damage, _angle, _knockback):
 	if hp <= 0:
 		death()
 
-func _on_Fox_Tail_timer_timeout():
-	Fox_Tail_ammo += Fox_Tail_baseammo + additional_attacks
-	FoxTailAttackTimer.start()
+func _on_swipe_timer_timeout():
+	swipe_ammo += swipe_baseammo + additional_attacks
+	SwipeAttackTimer.start()
 	
-func _on_ice_spear_attack_timer_timeout():
-	if Fox_Tail_ammo > 0:
-		var foxtail_attack = foxtail.instantiate()
-		foxtail_attack.position = position
-		foxtail_attack.target = get_random_target()
-		foxtail_attack.level = Fox_Tail_level
-		add_child(foxtail_attack)
-		foxtail -= 1
-		if Fox_Tail_ammo > 0:
-			FoxTailAttackTimer.start()
+func _on_swipe_attack_timer_timeout():
+	if swipe_ammo > 0:
+		var swipe_attack = swipe.instantiate()
+		swipe_attack.position = position
+		swipe_attack.target = get_random_target()
+		swipe_attack.level = swipe_level
+		add_child(swipe_attack)
+		swipe -= 1
+		if swipe_ammo > 0:
+			SwipeAttackTimer.start()
 		else:
-			FoxTailAttackTimer.stop()
+			SwipeAttackTimer.stop()
 			
 func get_random_target():
 	if enemy_close.size() > 0:
@@ -161,7 +162,6 @@ func calculate_experiencecap():
 		exp_cap + 95 * (experience_level-19)*8
 	else:
 		exp_cap = 255 + (experience_level-39)*12
-		
 	return exp_cap
 		
 func set_expbar(set_value = 1, set_max_value = 100):
@@ -186,13 +186,21 @@ func levelup():
 
 func upgrade_character(upgrade):
 	match upgrade:
-		"foxtail1":
-		"foxtail2":
-		"foxtail3":
-		"foxtail4":
-		"foxtail5":
-		"foxtail6":
-		"foxtail7":
+		"swipe1":
+			swipe_level = 1
+			swipe_baseammo += 1
+		"swipe2":
+			swipe_level = 1
+			swipe_baseammo += 1
+		"swipe3":
+			swipe_level = 1
+			swipe_baseammo += 1
+		"swipe4":
+			swipe_level = 1
+			swipe_baseammo += 1
+		"swipe5":
+			swipe_level = 1
+			swipe_baseammo += 1
 		"armor1","armor2","armor3","armor4":
 			armor += 1
 		"speed1","speed2","speed3","speed4":
@@ -280,4 +288,3 @@ func death():
 func _on_btn_menu_click_end():
 	get_tree().paused = false
 	var _level = get_tree().change_scene_to_file("res://Source/TitleScreen/menu.tscn")
-

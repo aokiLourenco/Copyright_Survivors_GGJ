@@ -1,6 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://c4u3cjjuf5jps"]
+[gd_scene load_steps=13 format=3 uid="uid://c4u3cjjuf5jps"]
 
 [ext_resource type="Texture2D" uid="uid://red2xfo8jiaw" path="res://assets/images/enemies/Angry_Meal.png" id="1_gck2n"]
+[ext_resource type="Script" path="res://src/Enemy/enemy.gd" id="1_q576e"]
 [ext_resource type="PackedScene" uid="uid://cll5nn8uomugh" path="res://src/utility/hurt_box.tscn" id="2_5d7iy"]
 [ext_resource type="PackedScene" path="res://src/utility/hit_box.tscn" id="3_sfuhf"]
 
@@ -49,6 +50,10 @@ size = Vector2(64, 57)
 size = Vector2(53, 44)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+collision_layer = 5
+collision_mask = 5
+motion_mode = 1
+script = ExtResource("1_q576e")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_cnaq2")

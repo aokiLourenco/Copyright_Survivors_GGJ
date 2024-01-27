@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://wlfhy2ffc22t"]
+[gd_scene load_steps=11 format=3 uid="uid://wlfhy2ffc22t"]
 
-[ext_resource type="Texture2D" uid="uid://crtcax1xosjbp" path="res://assets/images/enemies/hornymon.png" id="1_rn48d"]
+[ext_resource type="Script" path="res://src/Enemy/enemy.gd" id="1_ccs7x"]
+[ext_resource type="Texture2D" uid="uid://cma2rfuw4tkyn" path="res://assets/images/enemies/hornymon.png" id="1_rn48d"]
 [ext_resource type="PackedScene" path="res://src/utility/hit_box.tscn" id="2_vhfls"]
 [ext_resource type="PackedScene" uid="uid://cll5nn8uomugh" path="res://src/utility/hurt_box.tscn" id="3_ot271"]
 
@@ -38,6 +39,10 @@ height = 38.0
 size = Vector2(51, 50)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+collision_layer = 5
+collision_mask = 5
+motion_mode = 1
+script = ExtResource("1_ccs7x")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_vam0f")
