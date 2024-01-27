@@ -15,7 +15,7 @@ var knockback = Vector2.ZERO
 @onready var snd_hit = $snd_hit
 @onready var hitBox = $HitBox
 
-var death_anim = preload("res://assets/images/death/bruh.tscn") # death explosion
+var death_anim = preload("res://src/Enemy/explosion.tscn")
 var exp_gem = preload("res://assets/images/items/Experience/Exp.tscn") 
 
 signal remove_from_array(object)

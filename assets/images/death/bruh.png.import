@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cywtu42o3akh0"
-path="res://.godot/imported/Minja.png-3385e8d61afcb3e01763de51036356f1.ctex"
+uid="uid://d3wojonr5ea7d"
+path="res://.godot/imported/bruh.png-b6eae864b72fbea231fa10c4ef8fbb53.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/enemies/Minja.png"
-dest_files=["res://.godot/imported/Minja.png-3385e8d61afcb3e01763de51036356f1.ctex"]
+source_file="res://assets/images/death/bruh.png"
+dest_files=["res://.godot/imported/bruh.png-b6eae864b72fbea231fa10c4ef8fbb53.ctex"]
 
 [params]
 
