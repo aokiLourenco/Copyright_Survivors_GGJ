@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5smmo4rqb4o6"
-path="res://.godot/imported/blue-screen.png-d2a0a2572d27f4b3543100e6d86d3d8d.ctex"
+uid="uid://chj7tbmoa2m4k"
+path="res://.godot/imported/toktik.png-7f522f52ecdd063c98032c20934ed4f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/items/blue-screen.png"
-dest_files=["res://.godot/imported/blue-screen.png-d2a0a2572d27f4b3543100e6d86d3d8d.ctex"]
+source_file="res://assets/images/items/Upgrades/toktik.png"
+dest_files=["res://.godot/imported/toktik.png-7f522f52ecdd063c98032c20934ed4f6.ctex"]
 
 [params]
 

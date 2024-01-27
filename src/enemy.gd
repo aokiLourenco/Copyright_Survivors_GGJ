@@ -14,8 +14,8 @@ var knockback = Vector2.ZERO
 @onready var anim = $AnimationPlayer
 @onready var snd_hit = $snd_hit
 @onready var hitBox = $HitBox
-var death_anim = preload("res://Source/bruh.tscn") $death_animations_Prob_Just_some_small_explosion
-var exp_gem = preload("res://Source/Exp.tscn") $experience
+var death_anim = preload("res://assets/death/bruh.tscn") # death_animations_Prob_Just_some_small_explosion
+var exp_gem = preload("res://assets/images/items/Experience/Exp.tscn") 
 
 signal remove_from_array(object)
 

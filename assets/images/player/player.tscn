@@ -1,20 +1,20 @@
 [gd_scene load_steps=7 format=3 uid="uid://dph72c678u345"]
 
-[ext_resource type="Texture2D" uid="uid://cf2i7alfs8fvf" path="res://assets/images/player/player.png" id="1_rnxap"]
+[ext_resource type="Texture2D" uid="uid://cf2i7alfs8fvf" path="res://assets/images/player/player.png" id="1_uxm3d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u6ni8"]
 size = Vector2(11.75, 12.25)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wu4q2"]
-atlas = ExtResource("1_rnxap")
+atlas = ExtResource("1_uxm3d")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t8etg"]
-atlas = ExtResource("1_rnxap")
+atlas = ExtResource("1_uxm3d")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_16v47"]
-atlas = ExtResource("1_rnxap")
+atlas = ExtResource("1_uxm3d")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_opbtg"]

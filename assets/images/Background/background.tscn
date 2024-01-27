@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://bg3afcu0gjtj1"]
+
+[ext_resource type="Texture2D" uid="uid://dq36t6ddlnihq" path="res://Images/3rd_grass.svg" id="1_y8o5y"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Sprite2D3" type="Sprite2D" parent="Node2D"]
+position = Vector2(925.5, 135.168)
+scale = Vector2(0.353906, 0.215362)
+texture = ExtResource("1_y8o5y")
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
+position = Vector2(525, 136)
+scale = Vector2(0.271875, 0.214063)
+texture = ExtResource("1_y8o5y")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Node2D"]
+position = Vector2(925, 458)
+scale = Vector2(0.353906, 0.29375)
+texture = ExtResource("1_y8o5y")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D"]
+position = Vector2(175.5, 136)
+scale = Vector2(0.274219, 0.214063)
+texture = ExtResource("1_y8o5y")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Node2D"]
+position = Vector2(175.5, 459.5)
+scale = Vector2(0.274219, 0.291406)
+texture = ExtResource("1_y8o5y")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Node2D"]
+position = Vector2(525, 459.5)
+scale = Vector2(0.271875, 0.291406)
+texture = ExtResource("1_y8o5y")

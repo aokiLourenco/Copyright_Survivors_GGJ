@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgd75ck046364"
-path="res://.godot/imported/calendar.png-5a824039bf8b57f69a5b576ef26f5590.ctex"
+uid="uid://bg31xs7b26xac"
+path="res://.godot/imported/demonetization.png-dce41e4248251a385e77c38476856707.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/items/calendar.png"
-dest_files=["res://.godot/imported/calendar.png-5a824039bf8b57f69a5b576ef26f5590.ctex"]
+source_file="res://assets/images/items/Upgrades/demonetization.png"
+dest_files=["res://.godot/imported/demonetization.png-dce41e4248251a385e77c38476856707.ctex"]
 
 [params]
 

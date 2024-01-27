@@ -12,7 +12,7 @@ var experience_level = 1
 var collected_experience = 0
 
 #Attacks
-var foxtail = preload("res://Player/Attack/fox_tail.tscn")
+var foxtail = preload("res://Player/Attack/swipe.tscn")
 
 #AttackNodes
 @onready var FoxTailTimer = get_node("%FoxTailTimer")
