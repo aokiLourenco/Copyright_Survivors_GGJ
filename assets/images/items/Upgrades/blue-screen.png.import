@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bg31xs7b26xac"
-path="res://.godot/imported/demonetization.png-2fe40723263514cd5568a0f7a42ee24d.ctex"
+uid="uid://c5smmo4rqb4o6"
+path="res://.godot/imported/blue-screen.png-33348b7421703e271fa22a0bbea1fed3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/items/demonetization.png"
-dest_files=["res://.godot/imported/demonetization.png-2fe40723263514cd5568a0f7a42ee24d.ctex"]
+source_file="res://assets/images/items/Upgrades/blue-screen.png"
+dest_files=["res://.godot/imported/blue-screen.png-33348b7421703e271fa22a0bbea1fed3.ctex"]
 
 [params]
 

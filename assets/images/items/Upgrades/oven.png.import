@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bv6xklmlfebt1"
-path="res://.godot/imported/homework.png-cb27ce7329660dfe3add89159442442d.ctex"
+uid="uid://bs4jg1p66fvyt"
+path="res://.godot/imported/oven.png-584826c4179a06491620d7376a41c7d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/items/homework.png"
-dest_files=["res://.godot/imported/homework.png-cb27ce7329660dfe3add89159442442d.ctex"]
+source_file="res://assets/images/items/Upgrades/oven.png"
+dest_files=["res://.godot/imported/oven.png-584826c4179a06491620d7376a41c7d8.ctex"]
 
 [params]
 

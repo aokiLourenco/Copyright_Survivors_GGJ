@@ -1,6 +1,6 @@
 extends Control
 
-var level = "res://Source/World/world.tscn"
+var level = "res://src/world/world.tscn"
 
 func _on_btn_play_click_end():
 	var _level = get_tree().change_scene_to_file(level)
