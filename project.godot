@@ -19,6 +19,16 @@ config/icon="res://icon.svg"
 
 UpgradeDb="*res://src/utility/upgrade_db.gd"
 
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=360
+window/size/mode=3
+window/size/borderless=true
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+
 [dotnet]
 
 project/assembly_name="A Original Game"
@@ -26,7 +36,7 @@ project/assembly_name="A Original Game"
 [importer_defaults]
 
 animation_library={
-"animation/fps": 60.0
+"animation/fps": 30.0
 }
 
 [input]
@@ -60,3 +70,4 @@ click={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=3
+renderer/rendering_method="mobile"

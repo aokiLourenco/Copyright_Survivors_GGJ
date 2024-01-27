@@ -2,7 +2,9 @@ extends Area2D
 
 @export var experience = 1
 
-var exp = preload("res://assets/images/Items/Experience/Exp.png")
+var exp_1 = preload("res://assets/images/items/Experience/Floppy_Dick1.png")
+var exp_2 = preload("res://assets/images/items/Experience/Floppy_Dick2.png")
+var exp_3 = preload("res://assets/images/items/Experience/Floppy_Dick3.png")
 
 var target = null
 var speed = -1
@@ -13,8 +15,12 @@ var speed = -1
 
 func _ready():
 	if experience < 5:
-		sprite.texture = exp
-		
+		return
+	elif experience < 25:
+		sprite.texture = exp_2
+	else:
+		sprite.texture = exp_3
+
 func _physics_process(delta):
 	if target != null:
 		global_position = global_position.move_toward(target.global_position, speed)

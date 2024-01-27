@@ -1,51 +1,55 @@
 extends Node
 
 
-const ICON_PATH = "res://Images/Items/Upgrades/"
-const WEAPON_PATH = "res://Images/Items/Weapons/"
+const ICON_PATH = "res://assets/images/items/Upgrades/"
+const WEAPON_PATH = "res://assets/images/items/Weapons/"
+const UPGRADE_PATH = "res://assets/images/items/Upgrades/"
+const EXP_Path = "res://assets/images/items/Experience/"
+const CHEST_PATH = "res://assets/images/items/Chest/"
+
 const UPGRADES = {
-	"foxtail1": {
-		"icon": WEAPON_PATH + "fox_tail.png",
-		"displayname": "Fox Tail",
-		"details": "A fox tail appears and strikes in the direction the player is facing",
+	"swipe1": {
+		"icon": WEAPON_PATH + "swipe.png",
+		"displayname": "Swipe",
+		"details": "Normal Swipe attack",
 		"level": "Level: 1",
 		"prerequisite": [],
 		"type": "weapon"
 	},
-	"foxtail2": {
-		"icon": WEAPON_PATH + "fox_tail.png",
-		"displayname": "Fox Tail",
-		"details": "A fox tail appears and strikes in the direction the player is facing",
+	"swipe2": {
+		"icon": WEAPON_PATH + "swipe.png",
+		"displayname": "Swipe",
+		"details": "Normal Swipe attack",
 		"level": "Level: 2",
-		"prerequisite": ["foxtail1"],
+		"prerequisite": ["swipe1"],
 		"type": "weapon"
 	},
-	"foxtail3": {
-		"icon": WEAPON_PATH + "fox_tail.png",
-		"displayname": "Fox Tail",
-		"details": "A fox tail appears and strikes in the direction the player is facing",
+	"swipe3": {
+		"icon": WEAPON_PATH + "swipe.png",
+		"displayname": "Swipe",
+		"details": "Normal Swipe attack",
 		"level": "Level: 3",
-		"prerequisite": ["foxtail2"],
+		"prerequisite": ["swipe2"],
 		"type": "weapon"
 	},
-	"foxtail4": {
-		"icon": WEAPON_PATH + "fox_tail.png",
-		"displayname": "Fox Tail",
-		"details": "A fox tail appears and strikes in the direction the player is facing",
+	"swipe4": {
+		"icon": WEAPON_PATH + "swipe.png",
+		"displayname": "Swipe",
+		"details": "Normal Swipe attack",
 		"level": "Level: 4",
-		"prerequisite": ["foxtail3"],
+		"prerequisite": ["swipe3"],
 		"type": "weapon"
 	},
-	"foxtail5": {
-		"icon": WEAPON_PATH + "fox_tail.png",
-		"displayname": "Fox Tail",
-		"details": "A fox tail appears and strikes in the direction the player is facing",
+	"swipe5": {
+		"icon": WEAPON_PATH + "swipe.png",
+		"displayname": "Swipe",
+		"details": "Normal Swipe attack",
 		"level": "Level: 5",
-		"prerequisite": ["foxtail4"],
+		"prerequisite": ["swipe4"],
 		"type": "weapon"
 	},
 	"food": {
-		"icon": "res://Images/items/Experience/techsupposrt.png",
+		"icon": EXP_Path + "techsupport.png",
 		"displayname": "Food",
 		"details": "Heals you for 20 health",
 		"level": "N/A",
