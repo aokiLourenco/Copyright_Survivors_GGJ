@@ -105,7 +105,7 @@ const UPGRADES = {
 		"displayname": "swipe",
 		"details": "Swipe Attack that attacks around you",
 		"level": "Level: 1",
-		"prerequisite": [""],
+		"prerequisite": [],
 		"type": "weapon"
 	},
 	"swipe2": {

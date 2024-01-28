@@ -13,11 +13,11 @@ var last_movement = Vector2.ZERO
 var target = Vector2.ZERO
 var angle = Vector2.ZERO
 
-@onready var player = get_node("/root/Player") # Adjust the path according to your player node
+@onready var player = get_tree().get_first_node_in_group("player")
 signal remove_from_array
 
 func _ready():
-	angle = player.global_position.direction_to(player.global_position + player.last_movement) # Adjust the angle based on player's direction
+	angle = global_position.direction_to(global_position + last_movement) # Adjust the angle based on player's direction
 	rotation = angle.angle() + deg_to_rad(135)
 	match level:
 		1:

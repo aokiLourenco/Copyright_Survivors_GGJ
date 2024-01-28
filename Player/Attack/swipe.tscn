@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cwkbqj2psue3a"]
 
 [ext_resource type="Script" path="res://Player/Attack/swipe.gd" id="1_bcgd6"]
-[ext_resource type="Texture2D" uid="uid://cgijepjjtqpui" path="res://images/items/Weapons/swipe.png" id="2_867pp"]
+[ext_resource type="Texture2D" uid="uid://dr4lj8oiylyt0" path="res://images/items/Weapons/sword.svg" id="2_7i5o7"]
 [ext_resource type="AudioStream" uid="uid://cim0gctsi0e5f" path="res://Audio/SoundEffect/swipe.wav" id="3_5ntgp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o1kke"]
@@ -9,6 +9,9 @@ size = Vector2(34, 52)
 
 [node name="Swipe" type="Area2D" groups=["attack"]]
 script = ExtResource("1_bcgd6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_7i5o7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -5)
@@ -18,8 +21,5 @@ shape = SubResource("RectangleShape2D_o1kke")
 
 [node name="snd_play" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_5ntgp")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_867pp")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

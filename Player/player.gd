@@ -194,19 +194,13 @@ func _on_swipe_timer_timeout():
 	swipeAttackTimer.start()
 
 func _on_swipe_attack_timer_timeout():
-	# Check if there's ammo available
 	if swipe_ammo > 0:
-		# Instantiate the swipe attack
 		var swipe_attack = swipe.instantiate()
-		# Set the position and direction of the swipe attack
 		swipe_attack.position = position * swipe_attackrange
 		swipe_attack.last_movement = last_movement
-		swipe_attack.level = swipe_level  # Assuming swipe_level is declared elsewhere
-		# Add the swipe attack as a child
+		swipe_attack.level = swipe_level
 		add_child(swipe_attack)
-		# Reduce swipe ammo
 		swipe_ammo -= 1
-		# Check if there's more ammo left to continue attacking
 		if swipe_ammo > 0:
 			swipeAttackTimer.start()
 		else:
