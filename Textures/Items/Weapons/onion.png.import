@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://da53mspvqfxq4"
-path="res://.godot/imported/health.png-68ffa39e5bfb28c2c2c42e7d6eb6e804.ctex"
+uid="uid://dl06unj0515gq"
+path="res://.godot/imported/onion.png-fc84775718b580cc892644587130bf4e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/GUI/health.png"
-dest_files=["res://.godot/imported/health.png-68ffa39e5bfb28c2c2c42e7d6eb6e804.ctex"]
+source_file="res://Textures/Items/Weapons/onion.png"
+dest_files=["res://.godot/imported/onion.png-fc84775718b580cc892644587130bf4e.ctex"]
 
 [params]
 

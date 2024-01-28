@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://da53mspvqfxq4"
-path="res://.godot/imported/health.png-68ffa39e5bfb28c2c2c42e7d6eb6e804.ctex"
+uid="uid://cgijepjjtqpui"
+path="res://.godot/imported/swipe.png-c885fc29fd611db345115f7cbe8f356c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/GUI/health.png"
-dest_files=["res://.godot/imported/health.png-68ffa39e5bfb28c2c2c42e7d6eb6e804.ctex"]
+source_file="res://Textures/Items/Weapons/swipe.png"
+dest_files=["res://.godot/imported/swipe.png-c885fc29fd611db345115f7cbe8f356c.ctex"]
 
 [params]
 

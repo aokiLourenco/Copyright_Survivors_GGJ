@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://da53mspvqfxq4"
-path="res://.godot/imported/health.png-68ffa39e5bfb28c2c2c42e7d6eb6e804.ctex"
+uid="uid://dr4lj8oiylyt0"
+path="res://.godot/imported/sword.svg-f948e4edd4dfff668c5e1b6e7a41eb24.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/GUI/health.png"
-dest_files=["res://.godot/imported/health.png-68ffa39e5bfb28c2c2c42e7d6eb6e804.ctex"]
+source_file="res://assets/images/items/Weapons/sword.svg"
+dest_files=["res://.godot/imported/sword.svg-f948e4edd4dfff668c5e1b6e7a41eb24.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

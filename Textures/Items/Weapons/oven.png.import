@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://da53mspvqfxq4"
-path="res://.godot/imported/health.png-68ffa39e5bfb28c2c2c42e7d6eb6e804.ctex"
+uid="uid://bs4jg1p66fvyt"
+path="res://.godot/imported/oven.png-74bbb3b90dc1d3ef5ddf945adfbfe667.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/GUI/health.png"
-dest_files=["res://.godot/imported/health.png-68ffa39e5bfb28c2c2c42e7d6eb6e804.ctex"]
+source_file="res://Textures/Items/Weapons/oven.png"
+dest_files=["res://.godot/imported/oven.png-74bbb3b90dc1d3ef5ddf945adfbfe667.ctex"]
 
 [params]
 
