@@ -8,12 +8,44 @@ const CHEST_PATH = "res://images/items/Chest/"
 const ICON_PATH = "res://Textures/Items/Upgrades/"
 const WEAPON_PATH = "res://Textures/Items/Weapons/"
 const UPGRADES = {
-	"javelin1": {
-		"icon": WEAPON_PATH + "onion.png",
-		"displayname": "javelin",
-		"details": "A wise ogre once said: “Life is  like onions, it has many LAYERS!” Plus you can keep people away with your bad breath.",
-		"level": "Level 1",
+	"swipe1": {
+		"icon": WEAPON_PATH + "swipe.png",
+		"displayname": "Swipe",
+		"details": "Normal Swipe attack",
+		"level": "Level: 1",
 		"prerequisite": [],
+		"type": "weapon"
+	},
+	"swipe2": {
+		"icon": WEAPON_PATH + "swipe.png",
+		"displayname": "Swipe",
+		"details": "Normal Swipe attack",
+		"level": "Level: 2",
+		"prerequisite": ["swipe1"],
+		"type": "weapon"
+	},
+	"swipe3": {
+		"icon": WEAPON_PATH + "swipe.png",
+		"displayname": "Swipe",
+		"details": "Normal Swipe attack",
+		"level": "Level: 3",
+		"prerequisite": ["swipe2"],
+		"type": "weapon"
+	},
+	"swipe4": {
+		"icon": WEAPON_PATH + "swipe.png",
+		"displayname": "Swipe",
+		"details": "Normal Swipe attack",
+		"level": "Level: 4",
+		"prerequisite": ["swipe3"],
+		"type": "weapon"
+	},
+	"swipe5": {
+		"icon": WEAPON_PATH + "swipe.png",
+		"displayname": "Swipe",
+		"details": "Normal Swipe attack",
+		"level": "Level: 5",
+		"prerequisite": ["swipe4"],
 		"type": "weapon"
 	},
 	"onion1": {
@@ -56,7 +88,7 @@ const UPGRADES = {
 		"prerequisite": ["onion4"],
 		"type": "weapon"
 	},
-	"oven1": {
+	"javelin1": {
 		"icon": WEAPON_PATH + "oven.png",
 		"displayname": "Oven",
 		"details": "Just a completely normal household appliance.",
@@ -64,7 +96,7 @@ const UPGRADES = {
 		"prerequisite": [],
 		"type": "weapon"
 	},
-	"oven2": {
+	"javelin2": {
 		"icon": WEAPON_PATH + "oven.png",
 		"displayname": "Oven",
 		"details": "Just a completely normal household appliance.",
@@ -72,7 +104,7 @@ const UPGRADES = {
 		"prerequisite": ["oven1"],
 		"type": "weapon"
 	},
-	"oven3": {
+	"javelin3": {
 		"icon": WEAPON_PATH + "oven.png",
 		"displayname": "Oven",
 		"details": "Just a completely normal household appliance.",
@@ -80,7 +112,7 @@ const UPGRADES = {
 		"prerequisite": ["oven2"],
 		"type": "weapon"
 	},
-	"oven4": {
+	"javelin4": {
 		"icon": WEAPON_PATH + "oven.png",
 		"displayname": "Oven",
 		"details": "Just a completely normal household appliance.",
@@ -88,7 +120,7 @@ const UPGRADES = {
 		"prerequisite": ["oven3"],
 		"type": "weapon"
 	},
-	"oven5": {
+	"javelin5": {
 		"icon": WEAPON_PATH + "oven.png",
 		"displayname": "Oven",
 		"details": "Just a completely normal household appliance.",
@@ -96,7 +128,7 @@ const UPGRADES = {
 		"prerequisite": ["oven4"],
 		"type": "weapon"
 	},
-	"copystrike1": {
+	"tornado1": {
 		"icon": WEAPON_PATH + "copystr.png",
 		"displayname": "Copystrike",
 		"details": "What this game would get if it was a Youtube video. Please don’t sue us N*ntendo.",
@@ -104,7 +136,7 @@ const UPGRADES = {
 		"prerequisite": [],
 		"type": "weapon"
 	},
-	"copystrike2": {
+	"tornado2": {
 		"icon": WEAPON_PATH + "copystr.png",
 		"displayname": "Copystrike",
 		"details": "What this game would get if it was a Youtube video. Please don’t sue us N*ntendo.",
@@ -112,7 +144,7 @@ const UPGRADES = {
 		"prerequisite": ["copystrike1"],
 		"type": "weapon"
 	},
-	"copystrike3": {
+	"tornado3": {
 		"icon": WEAPON_PATH + "copystr.png",
 		"displayname": "Copystrike",
 		"details": "What this game would get if it was a Youtube video. Please don’t sue us N*ntendo.",
@@ -120,7 +152,7 @@ const UPGRADES = {
 		"prerequisite": ["copystrike2"],
 		"type": "weapon"
 	},
-	"copystrike4": {
+	"tornado4": {
 		"icon": WEAPON_PATH + "copystr.png",
 		"displayname": "Copystrike",
 		"details": "What this game would get if it was a Youtube video. Please don’t sue us N*ntendo.",
@@ -128,7 +160,7 @@ const UPGRADES = {
 		"prerequisite": ["copystrike3"],
 		"type": "weapon"
 	},
-	"copystrike5": {
+	"tornado5": {
 		"icon": WEAPON_PATH + "copystr.png",
 		"displayname": "Copystrike",
 		"details": "What this game would get if it was a Youtube video. Please don’t sue us N*ntendo.",
@@ -136,7 +168,7 @@ const UPGRADES = {
 		"prerequisite": ["copystrike4"],
 		"type": "weapon"
 	},
-	"toktik1": {
+	"icespear1": {
 		"icon": WEAPON_PATH + "toktik.png",
 		"displayname": "Tok Tik",
 		"details": "It’ll make you swipe more than a desperate person on Tinder. That’s you. You’re the desperate person.",
@@ -144,7 +176,7 @@ const UPGRADES = {
 		"prerequisite": [],
 		"type": "weapon"
 	},
-	"toktik2": {
+	"icespear2": {
 		"icon": WEAPON_PATH + "toktik.png",
 		"displayname": "Tok Tik",
 		"details": "It’ll make you swipe more than a desperate person on Tinder. That’s you. You’re the desperate person.",
@@ -152,7 +184,7 @@ const UPGRADES = {
 		"prerequisite": ["toktik1"],
 		"type": "weapon"
 	},
-	"toktik3": {
+	"icespear3": {
 		"icon": WEAPON_PATH + "toktik.png",
 		"displayname": "Tok Tik",
 		"details": "It’ll make you swipe more than a desperate person on Tinder. That’s you. You’re the desperate person.",
@@ -160,7 +192,7 @@ const UPGRADES = {
 		"prerequisite": ["toktik2"],
 		"type": "weapon"
 	},
-	"toktik4": {
+	"icespear4": {
 		"icon": WEAPON_PATH + "toktik.png",
 		"displayname": "Tok Tik",
 		"details": "It’ll make you swipe more than a desperate person on Tinder. That’s you. You’re the desperate person.",
@@ -168,7 +200,7 @@ const UPGRADES = {
 		"prerequisite": ["toktik3"],
 		"type": "weapon"
 	},
-	"toktik5": {
+	"icespear5": {
 		"icon": WEAPON_PATH + "toktik.png",
 		"displayname": "Tok Tik",
 		"details": " It’ll make you swipe more than a desperate person on Tinder. That’s you. You’re the desperate person.",
@@ -176,7 +208,7 @@ const UPGRADES = {
 		"prerequisite": ["toktik4"],
 		"type": "weapon"
 	},
-	"moreram1": {
+	"scroll1": {
 		"icon": UPGRADE_PATH + "moreram.png",
 		"displayname": "Download RAM",
 		"details": "I swear, this is not a virus. (Sweats profusely)",
@@ -184,7 +216,7 @@ const UPGRADES = {
 		"prerequisite": [],
 		"type": "upgrade"
 	},
-	"moreram2": {
+	"scroll2": {
 		"icon": UPGRADE_PATH + "moreram.png",
 		"displayname": "Download RAM",
 		"details": "I swear, this is not a virus. (Sweats profusely)",
@@ -192,7 +224,7 @@ const UPGRADES = {
 		"prerequisite": ["moreram1"],
 		"type": "upgrade"
 	},
-	"moreram3": {
+	"scroll3": {
 		"icon": UPGRADE_PATH + "moreram.png",
 		"displayname": "Download RAM",
 		"details": "I swear, this is not a virus. (Sweats profusely)",
@@ -200,7 +232,7 @@ const UPGRADES = {
 		"prerequisite": ["moreram2"],
 		"type": "upgrade"
 	},
-	"moreram4": {
+	"scroll4": {
 		"icon": UPGRADE_PATH + "moreram.png",
 		"displayname": "Download RAM",
 		"details": "I swear, this is not a virus. (Sweats profusely)",
@@ -208,7 +240,7 @@ const UPGRADES = {
 		"prerequisite": ["moreram3"],
 		"type": "upgrade"
 	},
-	"moreram5": {
+	"scroll5": {
 		"icon": UPGRADE_PATH + "moreram.png",
 		"displayname": "Download RAM",
 		"details": "I swear, this is not a virus. (Sweats profusely)",
@@ -216,7 +248,7 @@ const UPGRADES = {
 		"prerequisite": ["moreram4"],
 		"type": "upgrade"
 	},
-	"energydrink1": {
+	"speed1": {
 		"icon": UPGRADE_PATH + "green_cow.png",
 		"displayname": "Energy Drink",
 		"details": "Overclocking in real life. Side effects included.",
@@ -224,7 +256,7 @@ const UPGRADES = {
 		"prerequisite": [],
 		"type": "upgrade"
 	},
-	"energydrink2": {
+	"speed2": {
 		"icon": UPGRADE_PATH + "green_cow.png",
 		"displayname": "Energy Drink",
 		"details": "Overclocking in real life. Side effects included.",
@@ -232,7 +264,7 @@ const UPGRADES = {
 		"prerequisite": ["energydrink1"],
 		"type": "upgrade"
 	},
-	"energydrink3": {
+	"speed3": {
 		"icon": UPGRADE_PATH + "green_cow.png",
 		"displayname": "Energy Drink",
 		"details": "Overclocking in real life. Side effects included.",
@@ -240,7 +272,7 @@ const UPGRADES = {
 		"prerequisite": ["energydrink2"],
 		"type": "upgrade"
 	},
-	"energydrink4": {
+	"speed4": {
 		"icon": UPGRADE_PATH + "green_cow.png",
 		"displayname": "Energy Drink",
 		"details": "Overclocking in real life. Side effects included.",
@@ -248,7 +280,7 @@ const UPGRADES = {
 		"prerequisite": ["energydrink3"],
 		"type": "upgrade"
 	},
-	"energydrink5": {
+	"speed5": {
 		"icon": UPGRADE_PATH + "green_cow.png",
 		"displayname": "Energy Drink",
 		"details": "Overclocking in real life. Side effects included.",
@@ -256,7 +288,7 @@ const UPGRADES = {
 		"prerequisite": ["energydrink4"],
 		"type": "upgrade"
 	},
-	"deadline1": {
+	"tome1": {
 		"icon": UPGRADE_PATH + "calendar.png",
 		"displayname": "Deadline",
 		"details": "You’re twice as productive if you don’t sleep. I haven’t known sleep in 48 hours.",
@@ -264,7 +296,7 @@ const UPGRADES = {
 		"prerequisite": [],
 		"type": "upgrade"
 	},
-	"deadline2": {
+	"tome2": {
 		"icon": UPGRADE_PATH + "calendar.png",
 		"displayname": "Deadline",
 		"details": "You’re twice as productive if you don’t sleep. I haven’t known sleep in 48 hours.",
@@ -272,7 +304,7 @@ const UPGRADES = {
 		"prerequisite": ["deadline1"],
 		"type": "upgrade"
 	},
-	"deadline3": {
+	"tome3": {
 		"icon": UPGRADE_PATH + "calendar.png",
 		"displayname": "Deadline",
 		"details": "You’re twice as productive if you don’t sleep. I haven’t known sleep in 48 hours.",
@@ -280,7 +312,7 @@ const UPGRADES = {
 		"prerequisite": ["deadline2"],
 		"type": "upgrade"
 	},
-	"deadline4": {
+	"tome4": {
 		"icon": UPGRADE_PATH + "calendar.png",
 		"displayname": "Deadline",
 		"details": "You’re twice as productive if you don’t sleep. I haven’t known sleep in 48 hours.",
@@ -288,7 +320,7 @@ const UPGRADES = {
 		"prerequisite": ["deadline3"],
 		"type": "upgrade"
 	},
-	"deadline5": {
+	"tome5": {
 		"icon": UPGRADE_PATH + "calendar.png",
 		"displayname": "Deadline",
 		"details": "You’re twice as productive if you don’t sleep. I haven’t known sleep in 48 hours.",
@@ -296,7 +328,7 @@ const UPGRADES = {
 		"prerequisite": ["deadline4"],
 		"type": "upgrade"
 	},
-	"direx1": {
+	"armor1": {
 		"icon": UPGRADE_PATH + "direx.png",
 		"displayname": "Direx",
 		"details": "Remember to use protection, not like you’ll ever need it...",
@@ -304,7 +336,7 @@ const UPGRADES = {
 		"prerequisite": [],
 		"type": "upgrade"
 	},
-	"direx2": {
+	"armor2": {
 		"icon": UPGRADE_PATH + "direx.png",
 		"displayname": "Direx",
 		"details": "Remember to use protection, not like you’ll ever need it...",
@@ -312,7 +344,7 @@ const UPGRADES = {
 		"prerequisite": ["direx1"],
 		"type": "upgrade"
 	},
-	"direx3": {
+	"armor3": {
 		"icon": UPGRADE_PATH + "direx.png",
 		"displayname": "Direx",
 		"details": "Remember to use protection, not like you’ll ever need it...",
@@ -320,7 +352,7 @@ const UPGRADES = {
 		"prerequisite": ["direx2"],
 		"type": "upgrade"
 	},
-	"direx4": {
+	"armor4": {
 		"icon": UPGRADE_PATH + "direx.png",
 		"displayname": "Direx",
 		"details": "Remember to use protection, not like you’ll ever need it...",
@@ -328,7 +360,7 @@ const UPGRADES = {
 		"prerequisite": ["direx3"],
 		"type": "upgrade"
 	},
-	"direx5": {
+	"armor5": {
 		"icon": UPGRADE_PATH + "direx.png",
 		"displayname": "Direx",
 		"details": "Remember to use protection, not like you’ll ever need it...",
@@ -375,6 +407,30 @@ const UPGRADES = {
 		"level": "Level 1",
 		"prerequisite": [],
 		"type": "chest"
+	},
+	"ring1": {
+		"icon": ICON_PATH + "urand_mage.png",
+		"displayname": "Ring",
+		"details": "Your spells now spawn 1 more additional attack",
+		"level": "Level: 1",
+		"prerequisite": [],
+		"type": "upgrade"
+	},
+	"ring2": {
+		"icon": ICON_PATH + "urand_mage.png",
+		"displayname": "Ring",
+		"details": "Your spells now spawn an additional attack",
+		"level": "Level: 2",
+		"prerequisite": ["ring1"],
+		"type": "upgrade"
+	},
+	"food": {
+		"icon": ICON_PATH + "chunk.png",
+		"displayname": "Food",
+		"details": "Heals you for 20 health",
+		"level": "N/A",
+		"prerequisite": [],
+		"type": "item"
 	},
 	"bluescreen": {
 		"icon": EXP_PATH + "blue-screen.png",
