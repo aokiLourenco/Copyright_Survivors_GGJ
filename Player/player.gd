@@ -77,7 +77,7 @@ var enemy_close = []
 signal playerdeath
 
 func _ready():
-	upgrade_character("icespear1")
+	upgrade_character("javelin1")
 	attack()
 	set_expbar(experience, calculate_experiencecap())
 	_on_hurt_box_hurt(0,0,0)
@@ -175,7 +175,6 @@ func spawn_javelin():
 			i.update_javelin()
 	if javelin_level == 2:
 		$AudioStreamPlayer
-
 func get_random_target():
 	if enemy_close.size() > 0:
 		return enemy_close.pick_random().global_position
