@@ -368,23 +368,24 @@ const UPGRADES = {
 		"prerequisite": ["direx4"],
 		"type": "upgrade"
 	},
-	"techsup": {
-		"icon": EXP_PATH + "techsupport.png",
-		"displayname": "Tech Support",
-		"details": "Have you tried turning it off and on? It’ll fix most things, even body parts.",
-		"level": "Level 0",
-		"prerequisite": [],
-		"type": "exp"
-	},
+	#"techsup": {
+		#"icon": EXP_PATH + "techsupport.png",
+		#"displayname": "Tech Support",
+		#"details": "Have you tried turning it off and on? It’ll fix most things, even body parts.",
+		#"level": "Level 0",
+		#"prerequisite": [],
+		#"type": "exp"
+	#},
 	
-	"chest": {
-		"icon": CHEST_PATH + "homework.png",
-		"displayname": "'Homework'",
-		"details": "Definitely has items inside.",
-		"level": "Level 1",
-		"prerequisite": [],
-		"type": "chest"
-	},
+	#"chest": {
+		#"icon": CHEST_PATH + "homework.png",
+		#"displayname": "'Homework'",
+		#"details": "Definitely has items inside.",
+		#"level": "Level 1",
+		#"prerequisite": [],
+		#"type": "chest"
+	#},
+	
 	"ring1": {
 		"icon": ICON_PATH + "urand_mage.png",
 		"displayname": "Ring",
@@ -409,13 +410,13 @@ const UPGRADES = {
 		"prerequisite": [],
 		"type": "item"
 	},
-	"bluescreen": {
-		"icon": EXP_PATH + "blue-screen.png",
-		"displayname": "Blue Screen",
-		"details": "Oops, there goes all your data. At least it clears the screen.",
-		"level": "Level 0",
-		"prerequisite": [],
-		"type": "exp"
-	}
+	#"bluescreen": {
+		#"icon": EXP_PATH + "blue-screen.png",
+		#"displayname": "Blue Screen",
+		#"details": "Oops, there goes all your data. At least it clears the screen.",
+		#"level": "Level 0",
+		#"prerequisite": [],
+		#"type": "exp"
+	#}
 }
 

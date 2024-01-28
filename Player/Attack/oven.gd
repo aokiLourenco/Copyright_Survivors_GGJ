@@ -89,7 +89,7 @@ var rng = RandomNumberGenerator.new()
 
 func add_paths():
 	var rand_var = rng.randf_range(0, 10)
-	if rand_var > 5:
+	if rand_var > 8:
 		snd_attack.play()
 	else:
 		woosh.play()
