@@ -370,7 +370,7 @@ const UPGRADES = {
 	},
 	"chest": {
 		"icon": CHEST_PATH + "homework.png",
-		"displayname": "'Homework' Folder",
+		"displayname": "'Homework'",
 		"details": "Definitely has items inside.",
 		"level": "Level 1",
 		"prerequisite": [],

@@ -1,11 +1,11 @@
 [gd_scene load_steps=5 format=3 uid="uid://cr4wh8k8gaysv"]
 
-[ext_resource type="Script" path="res://Player/Attack/javelin.gd" id="1_ro7n8"]
+[ext_resource type="Script" path="res://Player/Attack/oven.gd" id="1_ro7n8"]
 [ext_resource type="Texture2D" uid="uid://bs4jg1p66fvyt" path="res://Textures/Items/Weapons/oven.png" id="2_6edin"]
 [ext_resource type="AudioStream" uid="uid://ckro6v281rcab" path="res://Audio/SoundEffect/woosh.wav" id="3_6kycs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ojwf"]
-size = Vector2(4.24264, 32.5269)
+size = Vector2(21, 23)
 
 [node name="Javelin" type="Area2D" groups=["attack"]]
 top_level = true
@@ -19,8 +19,7 @@ scale = Vector2(0.421875, 0.40625)
 texture = ExtResource("2_6edin")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -0.5)
-rotation = -0.785398
+position = Vector2(-0.5, 0.5)
 shape = SubResource("RectangleShape2D_5ojwf")
 disabled = true
 

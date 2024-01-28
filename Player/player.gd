@@ -14,7 +14,7 @@ var collected_experience = 0
 #Attacks
 var iceSpear = preload("res://Player/Attack/ice_spear.tscn")
 var tornado = preload("res://Player/Attack/tornado.tscn")
-var javelin = preload("res://Player/Attack/javelin.tscn")
+var javelin = preload("res://Player/Attack/oven.tscn")
 
 #AttackNodes
 @onready var iceSpearTimer = get_node("%IceSpearTimer")

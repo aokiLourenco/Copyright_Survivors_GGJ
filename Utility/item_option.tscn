@@ -9,17 +9,17 @@ custom_minimum_size = Vector2(180, 50)
 anchors_preset = -1
 anchor_right = 0.281
 anchor_bottom = 0.139
-offset_right = 0.159988
-offset_bottom = -0.0400047
+offset_right = 0.160004
+offset_bottom = 10.96
 color = Color(0.54902, 0.54902, 0.54902, 1)
 script = ExtResource("1_unejd")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_left = 2.0
-offset_top = 2.0
-offset_right = 26.0
-offset_bottom = 26.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 49.0
+offset_bottom = 49.0
 color = Color(0, 0, 0, 1)
 
 [node name="ItemIcon" type="TextureRect" parent="ColorRect"]
@@ -31,30 +31,31 @@ texture = ExtResource("1_583l0")
 
 [node name="lbl_name" type="Label" parent="."]
 layout_mode = 0
-offset_left = 39.0
+offset_left = 51.0
 offset_top = 2.0
-offset_right = 79.0
+offset_right = 88.0
 offset_bottom = 25.0
 theme_override_fonts/font = ExtResource("2_wif5r")
+theme_override_font_sizes/font_size = 11
 text = "Name"
 horizontal_alignment = 1
 
 [node name="lbl_description" type="Label" parent="."]
 layout_mode = 0
-offset_left = 4.0
-offset_top = 27.0
-offset_right = 166.0
-offset_bottom = 48.0
+offset_left = 53.0
+offset_top = 16.0
+offset_right = 176.0
+offset_bottom = 43.0
 theme_override_fonts/font = ExtResource("2_wif5r")
-theme_override_font_sizes/font_size = 8
+theme_override_font_sizes/font_size = 7
 text = "Description of Item"
 autowrap_mode = 3
 
 [node name="lbl_level" type="Label" parent="."]
 layout_mode = 0
-offset_left = 130.0
+offset_left = 143.0
 offset_top = 3.0
-offset_right = 170.0
+offset_right = 180.0
 offset_bottom = 26.0
 theme_override_fonts/font = ExtResource("2_wif5r")
 theme_override_font_sizes/font_size = 12
