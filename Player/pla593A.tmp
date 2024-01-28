@@ -108,6 +108,7 @@ collision_mask = 8
 shape = SubResource("CircleShape2D_6vwp8")
 
 [node name="GUILayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="GUI" type="Control" parent="GUILayer"]
 layout_mode = 3
