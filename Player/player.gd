@@ -77,11 +77,7 @@ var enemy_close = []
 signal playerdeath
 
 func _ready():
-<<<<<<< Updated upstream
 	upgrade_character("icespear1")
-=======
-	upgrade_character("javelin1")
->>>>>>> Stashed changes
 	attack()
 	set_expbar(experience, calculate_experiencecap())
 	_on_hurt_box_hurt(0,0,0)
@@ -177,29 +173,8 @@ func spawn_javelin():
 	for i in get_javelins:
 		if i.has_method("update_javelin"):
 			i.update_javelin()
-<<<<<<< Updated upstream
-=======
 	if javelin_level == 2:
 		$AudioStreamPlayer
-		
-func _on_swipe_timer_timeout():
-	# Reduce swipe ammo and start the attack timer
-	swipe_ammo += swipe_baseammo + additional_attacks
-	swipeAttackTimer.start()
-
-func _on_swipe_attack_timer_timeout():
-	if swipe_ammo > 0:
-		var swipe_attack = swipe.instantiate()
-		swipe_attack.position = position * swipe_attackrange
-		swipe_attack.last_movement = last_movement
-		swipe_attack.level = swipe_level
-		add_child(swipe_attack)
-		swipe_ammo -= 1
-		if swipe_ammo > 0:
-			swipeAttackTimer.start()
-		else:
-			swipeAttackTimer.stop()
->>>>>>> Stashed changes
 
 func get_random_target():
 	if enemy_close.size() > 0:

@@ -2,9 +2,9 @@ extends Area2D
 
 @export var experience = 1
 
-var exp_1 = preload("res://assets/images/items/Experience/Floppy_Dick1.png")
-var exp_2 = preload("res://assets/images/items/Experience/Floppy_Dick2.png")
-var exp_3 = preload("res://assets/images/items/Experience/Floppy_Dick3.png")
+var exp_1 = preload("res://Textures/Items/Gems/Floppy_Dick1.png")
+var exp_2 = preload("res://Textures/Items/Gems/Floppy_Dick2.png")
+var exp_3 = preload("res://Textures/Items/Gems/Floppy_Dick3.png")
 
 var target = null
 var speed = -1

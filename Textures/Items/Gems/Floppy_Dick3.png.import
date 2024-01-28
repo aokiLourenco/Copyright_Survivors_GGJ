@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blpjl8raquq2s"
-path="res://.godot/imported/juggernaut.png-d5a89c18e9dab51b476eb18ab8258fc7.ctex"
+uid="uid://dlsqcjyjc3qfl"
+path="res://.godot/imported/Floppy_Dick3.png-213b6008d0ccefe4f249b7cafc3ab9f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Enemy/juggernaut.png"
-dest_files=["res://.godot/imported/juggernaut.png-d5a89c18e9dab51b476eb18ab8258fc7.ctex"]
+source_file="res://Textures/Items/Gems/Floppy_Dick3.png"
+dest_files=["res://.godot/imported/Floppy_Dick3.png-213b6008d0ccefe4f249b7cafc3ab9f1.ctex"]
 
 [params]
 

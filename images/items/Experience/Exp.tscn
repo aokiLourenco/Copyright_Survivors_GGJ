@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://6u1rst8iv1f0"]
 
-[ext_resource type="Texture2D" uid="uid://76wdct11yurt" path="res://assets/images/items/Experience/Floppy_Dick1.png" id="1_fnbhh"]
+[ext_resource type="Texture2D" uid="uid://76wdct11yurt" path="res://Textures/Items/Gems/Floppy_Dick1.png" id="1_fnbhh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f7utf"]
 size = Vector2(71, 67)
