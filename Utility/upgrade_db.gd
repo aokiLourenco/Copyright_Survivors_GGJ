@@ -100,46 +100,6 @@ const UPGRADES = {
 		"prerequisite": ["tornado3"],
 		"type": "weapon"
 	},
-	"swipe1": {
-		"icon": WEAPON_PATH + "swipe.png",
-		"displayname": "swipe",
-		"details": "Swipe Attack that attacks around you",
-		"level": "Level: 1",
-		"prerequisite": [],
-		"type": "weapon"
-	},
-	"swipe2": {
-		"icon": WEAPON_PATH + "swipe.png",
-		"displayname": "swipe",
-		"details": "Swipe Attack that attacks around you",
-		"level": "Level: 2",
-		"prerequisite": ["swipe1"],
-		"type": "weapon"
-	},
-	"swipe3": {
-		"icon": WEAPON_PATH + "swipe.png",
-		"displayname": "swipe",
-		"details": "Swipe Attack that attacks around you",
-		"level": "Level: 3",
-		"prerequisite": ["swipe2"],
-		"type": "weapon"
-	},
-	"swipe4": {
-		"icon": WEAPON_PATH + "swipe.png",
-		"displayname": "swipe",
-		"details": "Swipe Attack that attacks around you",
-		"level": "Level: 4",
-		"prerequisite": ["swipe3"],
-		"type": "weapon"
-	},
-	"swipe5": {
-		"icon": WEAPON_PATH + "swipe.png",
-		"displayname": "swipe",
-		"details": "Swipe Attack that attacks around you",
-		"level": "Level: 5",
-		"prerequisite": ["swipe4"],
-		"type": "weapon"
-	},
 	"armor1": {
 		"icon": ICON_PATH + "helmet_1.png",
 		"displayname": "Armor",

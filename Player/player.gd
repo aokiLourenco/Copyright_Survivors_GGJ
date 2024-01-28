@@ -15,7 +15,6 @@ var collected_experience = 0
 var iceSpear = preload("res://Player/Attack/ice_spear.tscn")
 var tornado = preload("res://Player/Attack/tornado.tscn")
 var javelin = preload("res://Player/Attack/javelin.tscn")
-var swipe = preload("res://Player/Attack/swipe.tscn")
 
 #AttackNodes
 @onready var iceSpearTimer = get_node("%IceSpearTimer")
@@ -23,8 +22,6 @@ var swipe = preload("res://Player/Attack/swipe.tscn")
 @onready var tornadoTimer = get_node("%TornadoTimer")
 @onready var tornadoAttackTimer = get_node("%TornadoAttackTimer")
 @onready var javelinBase = get_node("%JavelinBase")
-@onready var swipeTimer = get_node("%SwipeTimer")
-@onready var swipeAttackTimer = get_node("%SwipeAttackTimer")
 
 #UPGRADES
 var collected_upgrades = []
@@ -50,13 +47,6 @@ var tornado_level = 0
 #Javelin
 var javelin_ammo = 0
 var javelin_level = 0
-
-#swipe
-var swipe_ammo = 0
-var swipe_baseammo = 0
-var swipe_attackspeed = 1.5
-var swipe_level = 0
-var swipe_attackrange = 100
 
 #Enemy Related
 var enemy_close = []
@@ -87,7 +77,7 @@ var enemy_close = []
 signal playerdeath
 
 func _ready():
-	upgrade_character("swipe1")
+	upgrade_character("icespear1")
 	attack()
 	set_expbar(experience, calculate_experiencecap())
 	_on_hurt_box_hurt(0,0,0)
@@ -127,10 +117,6 @@ func attack():
 			tornadoTimer.start()
 	if javelin_level > 0:
 		spawn_javelin()
-	if swipe_level > 0:
-		swipeTimer.wait_time = swipe_attackspeed * (1-spell_cooldown)
-		if swipeTimer.is_stopped():
-			swipeTimer.start() 
 		
 func _on_hurt_box_hurt(damage, _angle, _knockback):
 	hp -= clamp(damage-armor, 1.0, 999.0)
@@ -187,24 +173,6 @@ func spawn_javelin():
 	for i in get_javelins:
 		if i.has_method("update_javelin"):
 			i.update_javelin()
-
-func _on_swipe_timer_timeout():
-	# Reduce swipe ammo and start the attack timer
-	swipe_ammo += swipe_baseammo + additional_attacks
-	swipeAttackTimer.start()
-
-func _on_swipe_attack_timer_timeout():
-	if swipe_ammo > 0:
-		var swipe_attack = swipe.instantiate()
-		swipe_attack.position = position * swipe_attackrange
-		swipe_attack.last_movement = last_movement
-		swipe_attack.level = swipe_level
-		add_child(swipe_attack)
-		swipe_ammo -= 1
-		if swipe_ammo > 0:
-			swipeAttackTimer.start()
-		else:
-			swipeAttackTimer.stop()
 
 func get_random_target():
 	if enemy_close.size() > 0:
@@ -311,15 +279,6 @@ func upgrade_character(upgrade):
 			javelin_level = 3
 		"javelin4":
 			javelin_level = 4
-		"swipe1":
-			swipe_level = 1
-			swipe_ammo = 1
-		"swipe2":
-			swipe_level = 2
-		"swipe3":
-			swipe_level = 3
-		"swipe4":
-			swipe_level = 4
 		"armor1","armor2","armor3","armor4":
 			armor += 1
 		"speed1","speed2","speed3","speed4":
@@ -409,7 +368,6 @@ func death():
 	else:
 		lblResult.text = "You Lose"
 		sndLose.play()
-
 
 func _on_btn_menu_click_end():
 	get_tree().paused = false

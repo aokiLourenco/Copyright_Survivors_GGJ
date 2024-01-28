@@ -1,13 +1,13 @@
 [gd_scene load_steps=13 format=3 uid="uid://bw18jqj7k8uo4"]
 
-[ext_resource type="Texture2D" uid="uid://c5yvquhc1j6wa" path="res://assets/images/player/Protag.png" id="1_0nycx"]
-[ext_resource type="Script" path="res://assets/images/player/player.gd" id="1_wx5a1"]
+[ext_resource type="Texture2D" uid="uid://c5yvquhc1j6wa" path="res://images/player/Protag.png" id="1_0nycx"]
+[ext_resource type="Script" path="res://images/player/player.gd" id="1_wx5a1"]
 [ext_resource type="PackedScene" path="res://src/utility/hurt_box.tscn" id="2_8c7tm"]
-[ext_resource type="Texture2D" uid="uid://bvuc6160bikoc" path="res://assets/images/player/GUI/exp_background.png" id="4_2g1dt"]
-[ext_resource type="Texture2D" uid="uid://b0uacn55giwky" path="res://assets/images/player/GUI/exp_progress.png" id="5_0xhp6"]
-[ext_resource type="Texture2D" uid="uid://cnpw34cb3jgj5" path="res://assets/images/player/GUI/healthbar.png" id="6_g8h3r"]
-[ext_resource type="Texture2D" uid="uid://byydr0c7lqqyw" path="res://assets/images/player/GUI/health.png" id="7_agack"]
-[ext_resource type="PackedScene" uid="uid://ch4sfe6bn0xeq" path="res://src/utility/button.tscn" id="8_rlaau"]
+[ext_resource type="Texture2D" uid="uid://bvuc6160bikoc" path="res://images/player/GUI/exp_background.png" id="4_2g1dt"]
+[ext_resource type="Texture2D" uid="uid://b0uacn55giwky" path="res://images/player/GUI/exp_progress.png" id="5_0xhp6"]
+[ext_resource type="Texture2D" uid="uid://cnpw34cb3jgj5" path="res://images/player/GUI/healthbar.png" id="6_g8h3r"]
+[ext_resource type="Texture2D" uid="uid://byydr0c7lqqyw" path="res://images/player/GUI/health.png" id="7_agack"]
+[ext_resource type="PackedScene" path="res://src/utility/button.tscn" id="8_rlaau"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_l1tco"]
 
