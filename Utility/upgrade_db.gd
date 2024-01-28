@@ -376,30 +376,7 @@ const UPGRADES = {
 		"prerequisite": [],
 		"type": "exp"
 	},
-	"exp1": {
-		"icon": EXP_PATH + "Floppy_Dick1.png",
-		"displayname": "Floppy Disk",
-		"details": "A relic from ancient times. You’re more knowledgeable.",
-		"level": "Level 1",
-		"prerequisite": [],
-		"type": "exp"
-	},
-	"exp2": {
-		"icon": EXP_PATH + "Floppy_Dick2.png",
-		"displayname": "Floppy Disk",
-		"details": "A relic from ancient times. You’re more knowledgeable.",
-		"level": "Level 2",
-		"prerequisite": [],
-		"type": "exp"
-	},
-	"exp3": {
-		"icon": EXP_PATH + "Floppy_Dick3.png",
-		"displayname": "Floppy Disk",
-		"details": "A relic from ancient times. You’re more knowledgeable.",
-		"level": "Level 3",
-		"prerequisite": [],
-		"type": "exp"
-	},
+	
 	"chest": {
 		"icon": CHEST_PATH + "homework.png",
 		"displayname": "'Homework'",

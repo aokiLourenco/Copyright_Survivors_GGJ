@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://dncgepmkc4jf4"]
+[gd_scene load_steps=19 format=3 uid="uid://dncgepmkc4jf4"]
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_37q80"]
 [ext_resource type="Texture2D" uid="uid://c5yvquhc1j6wa" path="res://images/player/Protag.png" id="2_qlcqg"]
@@ -12,6 +12,7 @@
 [ext_resource type="AudioStream" uid="uid://bnv76nm5171dn" path="res://Audio/SoundEffect/Victory.wav" id="10_rwm3p"]
 [ext_resource type="AudioStream" uid="uid://ca6physj6mqei" path="res://Audio/SoundEffect/Lose.ogg" id="11_28kfi"]
 [ext_resource type="PackedScene" uid="uid://b7c7gsdx2rkjm" path="res://Utility/basic_button.tscn" id="12_i8esf"]
+[ext_resource type="Texture2D" uid="uid://bhb2pr80r36jq" path="res://Textures/GUI/feature_bugs (1).png" id="13_xwjua"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nffdp"]
 radius = 4.0
@@ -273,6 +274,14 @@ offset_top = 40.0
 offset_right = 208.0
 offset_bottom = 60.0
 columns = 10
+
+[node name="TextureRect" type="TextureRect" parent="GUILayer/GUI"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 50.0
+offset_right = 65.0
+offset_bottom = 114.0
+texture = ExtResource("13_xwjua")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_rwm3p")

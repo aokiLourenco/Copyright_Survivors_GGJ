@@ -95,6 +95,12 @@ region_rect = Rect2(-4000, -4000, 4000, 4000)
 
 [node name="Player" parent="." instance=ExtResource("2_40uwv")]
 
+[node name="FeatureBugs" parent="Player" index="11"]
+visible = false
+z_index = 3
+z_as_relative = false
+position = Vector2(0, 56)
+
 [node name="EnemySpawner" parent="." instance=ExtResource("3_p01g4")]
 spawns = Array[ExtResource("5_jj7s8")]([SubResource("Resource_03m25"), SubResource("Resource_ij20a"), SubResource("Resource_68oxv"), SubResource("Resource_l8y0x"), SubResource("Resource_daq1w"), SubResource("Resource_0gpiy"), SubResource("Resource_4teun"), SubResource("Resource_rx6id"), SubResource("Resource_t2np8")])
 
@@ -108,3 +114,6 @@ autoplay = true
 script = ExtResource("11_ovtx6")
 
 [connection signal="playerdeath" from="Player" to="snd_Music" method="_on_player_playerdeath"]
+
+[editable path="Player"]
+[editable path="Player/HurtBox"]

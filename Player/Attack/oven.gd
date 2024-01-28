@@ -25,6 +25,7 @@ var spr_jav_atk = preload("res://Textures/Items/Weapons/oven_flame.png")
 @onready var changeDirectionTimer = get_node("%ChangeDirection")
 @onready var resetPosTimer = get_node ("%ResetPosTimer")
 @onready var snd_attack = $snd_attack
+@onready var woosh = $woosh
 
 signal remove_from_array(object)
 
@@ -84,8 +85,14 @@ func _physics_process(delta):
 		position += player_angle*return_speed*delta
 		rotation = global_position.direction_to(player.global_position).angle() + deg_to_rad(135)
 
+var rng = RandomNumberGenerator.new()
+
 func add_paths():
-	snd_attack.play()
+	var rand_var = rng.randf_range(0, 10)
+	if rand_var > 5:
+		snd_attack.play()
+	else:
+		woosh.play()
 	emit_signal("remove_from_array",self)
 	target_array.clear()
 	var counter = 0

@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cr4wh8k8gaysv"]
+[gd_scene load_steps=6 format=3 uid="uid://c0wcjlga8w5bi"]
 
 [ext_resource type="Script" path="res://Player/Attack/oven.gd" id="1_ro7n8"]
 [ext_resource type="Texture2D" uid="uid://bs4jg1p66fvyt" path="res://Textures/Items/Weapons/oven.png" id="2_6edin"]
 [ext_resource type="AudioStream" uid="uid://ckro6v281rcab" path="res://Audio/SoundEffect/woosh.wav" id="3_6kycs"]
+[ext_resource type="AudioStream" uid="uid://b2fhrnfqkvmir" path="res://Audio/SoundEffect/five_ovens.mp3" id="3_cob0g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ojwf"]
 size = Vector2(21, 23)
@@ -38,6 +39,9 @@ wait_time = 3.0
 autostart = true
 
 [node name="snd_attack" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_cob0g")
+
+[node name="woosh" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_6kycs")
 
 [connection signal="timeout" from="AttackTimer" to="." method="_on_attack_timer_timeout"]
