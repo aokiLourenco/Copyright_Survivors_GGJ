@@ -15,8 +15,8 @@ var target_array = []
 var angle = Vector2.ZERO
 var reset_pos = Vector2.ZERO
 
-var spr_jav_reg = preload("res://Textures/Items/Weapons/javelin_3_new.png")
-var spr_jav_atk = preload("res://Textures/Items/Weapons/javelin_3_new_attack.png")
+var spr_jav_reg = preload("res://Textures/Items/Weapons/oven.png")
+var spr_jav_atk = preload("res://Textures/Items/Weapons/oven.png")
 
 @onready var player = get_tree().get_first_node_in_group("player")
 @onready var sprite = $Sprite2D
